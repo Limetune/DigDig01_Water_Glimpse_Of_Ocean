@@ -354,7 +354,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64baeb84a927af1479176ccb9a824877, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementspeed: 0
+  movementspeed: 4
   rb: {fileID: 2050558700}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
