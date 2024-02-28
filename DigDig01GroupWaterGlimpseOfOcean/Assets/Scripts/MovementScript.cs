@@ -15,8 +15,26 @@ public class PlayerMovementScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = 0;
+        float moveY = 0;
+
+        if (Input.GetKey(KeyCode.W))
+        {
+            moveY = 1;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            moveY = -1;
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            moveX = 1;
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            moveX = -1;
+        }
+
         moveDirection = new Vector2(moveX, moveY).normalized;
         Flip(moveX);
     }
