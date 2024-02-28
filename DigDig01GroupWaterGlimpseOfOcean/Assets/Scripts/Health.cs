@@ -4,6 +4,7 @@ public class Health : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    public int damage = 1;
 
     void Start()
     {
