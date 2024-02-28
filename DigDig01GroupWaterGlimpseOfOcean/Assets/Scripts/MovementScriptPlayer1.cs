@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
-public class PlayerMovementScript : MonoBehaviour
+public class PlayerMovementScriptPlayer1 : MonoBehaviour
 {
 
     public float movementspeed;

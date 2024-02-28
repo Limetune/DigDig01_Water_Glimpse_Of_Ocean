@@ -266,6 +266,7 @@ GameObject:
   - component: {fileID: 1287759838}
   - component: {fileID: 1287759837}
   - component: {fileID: 1287759836}
+  - component: {fileID: 1287759841}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player2
@@ -420,12 +421,26 @@ Transform:
   m_GameObject: {fileID: 1287759835}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.19, y: 0.13, z: 0}
+  m_LocalPosition: {x: -4.19, y: 0.3, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1287759841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287759835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae8fe0ea7c58894f87465c04f3e1791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1 &1776160051
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,6 +561,7 @@ GameObject:
   - component: {fileID: 2096627267}
   - component: {fileID: 2096627266}
   - component: {fileID: 2096627270}
+  - component: {fileID: 2096627271}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player1
@@ -706,6 +722,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementspeed: 10
   rb: {fileID: 2096627267}
+--- !u!114 &2096627271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096627264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae8fe0ea7c58894f87465c04f3e1791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
