@@ -23,15 +23,15 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && !attacking) // Ensure player can't attack while already attacking
         {
             Attack();
         }
 
-        if(attacking)
+        if (attacking)
         {
             timer += Time.deltaTime;
-            if(timer >= timeToAttack)
+            if (timer >= timeToAttack)
             {
                 timer = 0;
                 attacking = false;

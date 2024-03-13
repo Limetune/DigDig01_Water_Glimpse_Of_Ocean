@@ -2,26 +2,33 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public int maxHealth = 100;
-    public int currentHealth;
+    [SerializeField] private int health = 100;
 
+    private int MAX_HEALTH = 100;
     void Start()
     {
-        currentHealth = maxHealth;
+        
     }
 
     public void Damage(int amount)
     {
       if(amount < 0)
         {
-            throw new System.ArgumentOutOfRangeException("Varför tror du att spelet kan ha negativ health?");
+            throw new System.ArgumentOutOfRangeException("Varfï¿½r tror du att spelet kan ha negativ health?");
         }
-        this.currentHealth -= amount;
+        this.health -= amount;
+        if(health <= 0)
+        {
+            Die();
+        }
     }
 
     void Die()
     {
         // Death logic here
-        Destroy(gameObject);
+
+        Debug.Log("Dead");
+        Destroy(GameObject.FindWithTag("Enemy"));
+
     }
 }
