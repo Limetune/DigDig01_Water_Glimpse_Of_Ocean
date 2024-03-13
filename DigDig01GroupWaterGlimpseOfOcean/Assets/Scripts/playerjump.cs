@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,9 +15,9 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("jump"))
+        if (Input.GetKeyDown(KeyCode.W))
         {
             rb.AddForce(new Vector2(rb.velocity.x, jump));
         }
     }
-}*/
+}
