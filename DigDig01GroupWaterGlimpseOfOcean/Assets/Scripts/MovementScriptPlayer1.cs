@@ -62,8 +62,9 @@ public class PlayerMovementScriptPlayer1 : MonoBehaviour
     {
         if ((moveX > 0 && lookRight == false) || (moveX < 0 && lookRight == true))
         {
-            transform.Rotate(0f, 180f, 0f);
+           // transform.Rotate(0f, 180f, 0f);
             lookRight = !lookRight;
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
 
