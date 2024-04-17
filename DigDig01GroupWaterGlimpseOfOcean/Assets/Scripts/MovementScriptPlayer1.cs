@@ -30,7 +30,7 @@ public class PlayerMovementScriptPlayer1 : MonoBehaviour
         if (Input.GetKey(KeyCode.W))
         {
             moveY = 1;
-        }
+        } 
         if (Input.GetKey(KeyCode.S))
         {
             moveY = -1;
