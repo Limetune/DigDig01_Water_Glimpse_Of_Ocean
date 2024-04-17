@@ -5,8 +5,8 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float speed = 10f;
-    public float force = 300f;
+    private float speed = 10000000000000f;
+    private float force = 30000000000000000000000f;
     float coolDown = 0.5f; // Adjust cooldown time as needed
     float nextTimeToJump = 0;
     bool canJump = true;
@@ -24,7 +24,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             nextTimeToJump = Time.time + coolDown;
             rb.AddForce(Vector2.up * rb.mass * force, ForceMode2D.Impulse);
-            canJump = false; // Disable jumping until cooldown is over
+            canJump = true; // Disable jumping until cooldown is over
         }
     }
 
