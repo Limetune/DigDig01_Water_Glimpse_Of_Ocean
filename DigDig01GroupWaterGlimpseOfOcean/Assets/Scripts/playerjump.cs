@@ -6,12 +6,12 @@ public class NewBehaviourScript : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float speed = 10000000000000f;
-    private float force = 30000000000000000000000f;
+    private float force = 9000f;
     float coolDown = 0.5f; // Adjust cooldown time as needed
     float nextTimeToJump = 0;
     bool canJump = true;
 
-    // Start is called before the first frame update
+    // Start is called before the first frame updsate
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -23,7 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && Time.time > nextTimeToJump && canJump)
         {
             nextTimeToJump = Time.time + coolDown;
-            rb.AddForce(Vector2.up * rb.mass * force, ForceMode2D.Impulse);
+            rb.AddForce(Vector2.up * rb.mass * force, ForceMode2D.Force);
             canJump = true; // Disable jumping until cooldown is over
         }
     }

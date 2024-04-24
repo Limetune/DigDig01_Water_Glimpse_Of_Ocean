@@ -2609,7 +2609,7 @@ Transform:
   m_GameObject: {fileID: 731093766}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10, y: 0.3, z: 0}
+  m_LocalPosition: {x: 29.27, y: 8.34, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2848,13 +2848,14 @@ GameObject:
   - component: {fileID: 950353907}
   - component: {fileID: 950353909}
   - component: {fileID: 950353908}
+  - component: {fileID: 950353910}
   m_Layer: 0
   m_Name: AttackArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &950353907
 Transform:
   m_ObjectHideFlags: 0
@@ -2937,6 +2938,21 @@ PolygonCollider2D:
       - {x: 0.9431676, y: 0.44750738}
       - {x: 0.9039748, y: 0.62967336}
   m_UseDelaunayMesh: 0
+--- !u!111 &950353910
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950353906}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bcccd41fb8924a9428ea71825baca1d1, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1087435600
 GameObject:
   m_ObjectHideFlags: 0
@@ -7164,7 +7180,7 @@ Transform:
   m_GameObject: {fileID: 1380431943}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.38, y: 8.36, z: 0}
+  m_LocalPosition: {x: 42.57, y: 10.36, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27271,6 +27287,7 @@ GameObject:
   - component: {fileID: 2096627274}
   - component: {fileID: 2096627275}
   - component: {fileID: 2096627276}
+  - component: {fileID: 2096627277}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player1
@@ -27293,7 +27310,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 5
+  m_GravityScale: 12.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -27447,8 +27464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fd0c5b9ce295b14fb96bada1f3d3f33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.25
-  force: 1.5
 --- !u!114 &2096627274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27616,6 +27631,21 @@ PolygonCollider2D:
       - {x: 0.22080073, y: 0.43801513}
       - {x: 0.15735418, y: 0.4378681}
   m_UseDelaunayMesh: 0
+--- !u!111 &2096627277
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096627264}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: eeb3eb55ee5047a489df82c4ce95e8a6, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
